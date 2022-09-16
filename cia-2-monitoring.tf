@@ -2,7 +2,7 @@
 
 
 resource "github_repository" "cia-demo-monitoring" {
-  name        = "cia-demo-monitoring"
+  name        = "cia-2-demo-monitoring"
   description = "Home of the cia-demo-monitoring"
   visibility = "public"
   auto_init = true
@@ -11,7 +11,7 @@ resource "github_repository" "cia-demo-monitoring" {
 #### Terraform Workspace(es) and Variables
 
 resource "tfe_workspace" "cia-demo-monitoring" {
-  name         = "cia-demo-monitoring"
+  name         = "cia-2-demo-monitoring"
   organization = var.tfc_org
   tag_names    = ["demo", "monitoring"]
   vcs_repo {

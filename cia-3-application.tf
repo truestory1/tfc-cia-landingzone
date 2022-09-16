@@ -1,7 +1,7 @@
 ### GitHub Repo(s)
 
 resource "github_repository" "cia-demo-application" {
-  name        = "cia-demo-application"
+  name        = "cia-3-demo-application"
   description = "Home of the cia-demo-application"
   visibility = "public"
   auto_init = true
@@ -10,7 +10,7 @@ resource "github_repository" "cia-demo-application" {
 #### Terraform Workspace(es) and Variables
 
 resource "tfe_workspace" "cia-demo-application" {
-  name         = "cia-demo-application"
+  name         = "cia-3-demo-application"
   organization = var.tfc_org
   tag_names    = ["demo", "application"]
   vcs_repo {
