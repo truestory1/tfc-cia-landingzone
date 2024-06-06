@@ -21,7 +21,7 @@ resource "tfe_workspace" "cia-demo-application" {
   auto_apply = true
   global_remote_state = true 
   queue_all_runs = false  
-  terraform_version = "1.2.9" 
+  terraform_version = "1.8.5" 
 }
 
 
