@@ -22,6 +22,6 @@ resource "tfe_workspace" "cia-demo-monitoring" {
   auto_apply = true
   global_remote_state = true 
   queue_all_runs = false  
-  terraform_version = "1.8.5" 
+  terraform_version = "1.9.0" 
 }
 
